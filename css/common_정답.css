@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+body, h1, h2, h3, p, ul {margin:0;} /*초기화값이 항상 선행되어야함*/
+ul li {list-style: none;}
+a {text-decoration: none;}
+hr {display: none;}/*요소자체를 없애는 것*/
+.hidden {position: absolute; left:-9999px;}
+          /*콘텐츠요소는숨기기만하고 요소는 살려둘 때 하는 방법*/
+small {font-size: 1em;}
+
+/*전체영역*/
+body {width: 800px; margin: 8px auto 0;}
+
+/*헤더*/
+#header {height: 150px; background:#f46075; position:relative;}
+#header h1 img {display: block;}
+      /*이미지를 드래그하면 살짝 삐져나왔는데 inline요소라 여백을 가지고 있음
+        여백 처리를 위해 블락으로 함*/
+
+/*네비*/
+#gnb {position:absolute; left:290px; top:80px;}
+     /*float도 가능함, 감싸고있는 헤더를 기준점으로 삼기위해 포지션입력*/
+#gnb ul {}
+#gnb ul li {float: left; margin-right: 30px; }
+#gnb ul li a {color:#fff;}
+
+/*본문시작*/
+main {width: 564px; float:left;}
+  /*크게 봤을 때 메인영역과 어사이드가 나란히 배열되어야하기때문에
+    메인과 어사이드에 플로트 지정함*/
+/*content*/
+#content h2 { margin: 25px 0 25px 6px;}
+#content article {width: 272px; height: 242px; border:1px solid #ccc; box-sizing: border-box;}
+#content article a {}
+#content article a h3 {}
+#content article a h3 p {}
+/*사이드*/
+#dog3 {width: 202px; padding:10px; background:#ffffcc; border:1px solid #006400; box-sizing: border-box; float: right;}
+#dog3 img {}
+
+/*푸터*/
+footer {height: 60px; background: #333; color:#fff; clear:both;}

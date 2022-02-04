@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body, h1, h2, h3, p, ul {margin:0;}
+body {width: 800px; height: 804px; margin:0 auto;}
+#header {width: 800px; height: 150px; background: #f46075;
+        overflow:hidden;}
+#header img {
+  float: left;
+}
+hr {display:none;}
+.hidden {display:none;}
+
+#gnb {float: right; padding-right:70px;}
+#gnb ul li {list-style: none; float: left; padding-right:25px;}
+#gnb li a {line-height: 150px; width: 60px; text-decoration: none; color: #fff;}
+
+/*section*/
+h2 {padding:20px;}
+section article {width: 250px; height: 220px;
+                padding: 10px; margin:5px; border: 1px solid #cccccc; font-size: 13px;}
+section article a {text-decoration: none; color:#000;}
+#dog1 article, #dog2 article  {float:left; display:block; overflow: hidden;}
+#total {float:left;}
+#dog3 {float: right;}
+aside {width:180px; height: 460px; background-color: #ffffcc;
+       border: 1px solid #006400; padding:10px;}
+aside img {display: inline;}
+
+footer {width: 800px; height: 60px; background:#333333; clear: both; text-align: center; line-height: 60px; color:#fff;}
+footer::first-letter {text-transform: capitalize;}
